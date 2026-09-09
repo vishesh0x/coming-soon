@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <!-- Accent Rocket/Spark Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Badge -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)"/>
+
+  <!-- Outer Glow Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="url(#accent-grad)" stroke-width="12" stroke-opacity="0.4"/>
+
+  <!-- Launch Rocket Icon -->
+  <g transform="translate(256, 240) rotate(45) translate(-256, -240)">
+    <!-- Rocket Body -->
+    <path d="M256 120 C320 120 352 184 352 264 C352 304 336 336 336 336 L176 336 C176 336 160 304 160 264 C160 184 192 120 256 120 Z" fill="url(#accent-grad)"/>
+    
+    <!-- Left Fin -->
+    <path d="M160 280 L112 344 C104 354 112 368 126 368 L176 336 Z" fill="#3B82F6"/>
+    
+    <!-- Right Fin -->
+    <path d="M352 280 L400 344 C408 354 400 368 386 368 L336 336 Z" fill="#EC4899"/>
+    
+    <!-- Porthole Window -->
+    <circle cx="256" cy="220" r="32" fill="#0F172A"/>
+    <circle cx="256" cy="220" r="24" fill="#FFFFFF" fill-opacity="0.9"/>
+    
+    <!-- Exhaust Flame -->
+    <path d="M216 344 C216 384 256 424 256 424 C256 424 296 384 296 344 Z" fill="#F59E0B"/>
+  </g>
+</svg>
